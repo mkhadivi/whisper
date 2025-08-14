@@ -30,7 +30,7 @@ model = whisper.load_model('large')
 def progress_callback(progress, segment):#_value, progress_total):
     print(f"------------- Progress: {progress.n} of {progress.total} frames processed. ------------------")
 
-audio = whisper.load_audio('<your_audip_file>')
+audio = whisper.load_audio('<your_audio_file>')
 
 result = model.transcribe(audio, verbose=False, progress_callback=progress_callback)
 ```
