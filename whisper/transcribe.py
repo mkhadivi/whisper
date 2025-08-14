@@ -52,6 +52,7 @@ def transcribe(
     append_punctuations: str = "\"'.。,，!！?？:：”)]}、",
     clip_timestamps: Union[str, List[float]] = "0",
     hallucination_silence_threshold: Optional[float] = None,
+    progress_callback: Optional[callable] = None,
     **decode_options,
 ):
     """
@@ -506,6 +507,11 @@ def transcribe(
 
             # update progress bar
             pbar.update(min(content_frames, seek) - previous_seek)
+            
+            if progress_callback is not None:
+                progress_callback(
+                    pbar, segment
+                )
 
     return dict(
         text=tokenizer.decode(all_tokens[len(initial_prompt_tokens) :]),
