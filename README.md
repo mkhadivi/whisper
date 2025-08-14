@@ -1,8 +1,5 @@
 # Whisper with a call_back function
 
-[![GitHub license](https://img.shields.io/github/license/<your-username>/<your-repo>)](LICENSE)
-[![PyPI version](https://img.shields.io/pypi/v/<your-package-name>)](https://pypi.org/project/<your-package-name>/)
-
 A modified version of [OpenAI's Whisper](https://github.com/openai/whisper) — a general-purpose speech recognition model — with enhancements and custom features.
 
 ## 🔍 About
