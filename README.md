@@ -27,7 +27,7 @@ Basic transcription example:
 import whisper
 model = whisper.load_model('large')
 
-def progress_callback(progress, segment):#_value, progress_total):
+def progress_callback(progress, segment):
     print(f"------------- Progress: {progress.n} of {progress.total} frames processed. ------------------")
 
 audio = whisper.load_audio('<your_audio_file>')
