@@ -15,7 +15,7 @@ These changes make it easier to **know the progress of the file being processed*
 
 ## 📦 Installation
 
-### From Giyhub
+### From Github
 ```bash
 pip install git+https://github.com/mkhadivi/whisper.git
 ```
